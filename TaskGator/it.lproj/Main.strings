@@ -1,0 +1,75 @@
+
+/* Class = "UITextField"; placeholder = "Password*"; ObjectID = "3bM-1e-ygH"; */
+"3bM-1e-ygH.placeholder" = "Password*";
+
+/* Class = "UITextField"; placeholder = "Email ID*"; ObjectID = "7Lb-cn-PaW"; */
+"7Lb-cn-PaW.placeholder" = "Email ID*";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "7Sa-oQ-Z4X"; */
+"7Sa-oQ-Z4X.placeholder" = "Password";
+
+/* Class = "UITextField"; text = "+91"; ObjectID = "8zk-80-Za0"; */
+"8zk-80-Za0.text" = "+91";
+
+/* Class = "UILabel"; text = "Haven't received activation email yet?"; ObjectID = "FU2-Nr-gbk"; */
+"FU2-Nr-gbk.text" = "Haven't received activation email yet?";
+
+/* Class = "UIButton"; normalTitle = "Already registered? Sign in"; ObjectID = "GrS-8C-7tm"; */
+"GrS-8C-7tm.normalTitle" = "Already registered? Sign in";
+
+/* Class = "UITextField"; placeholder = "Confirm Password*"; ObjectID = "H4M-Sf-ssM"; */
+"H4M-Sf-ssM.placeholder" = "Confirm Password*";
+
+/* Class = "UITextField"; placeholder = "Contact No*"; ObjectID = "Hry-RU-EEY"; */
+"Hry-RU-EEY.placeholder" = "Contact No*";
+
+/* Class = "UITextField"; placeholder = "Location"; ObjectID = "K2Q-WX-GmB"; */
+"K2Q-WX-GmB.placeholder" = "Location";
+
+/* Class = "UIButton"; normalTitle = "Don't have account? Sign up."; ObjectID = "Kg7-3i-abD"; */
+"Kg7-3i-abD.normalTitle" = "Don't have account? Sign up.";
+
+/* Class = "UIButton"; normalTitle = "SERVICES"; ObjectID = "S8D-SG-ZSM"; */
+"S8D-SG-ZSM.normalTitle" = "SERVICES";
+
+/* Class = "UITextField"; placeholder = "Select Language*"; ObjectID = "UVV-6r-ubs"; */
+"UVV-6r-ubs.placeholder" = "Select Language*";
+
+/* Class = "UILabel"; text = "I am looking for"; ObjectID = "b36-ES-H1H"; */
+"b36-ES-H1H.text" = "I am looking for";
+
+/* Class = "UIButton"; normalTitle = "TASKERS"; ObjectID = "d0h-od-cOi"; */
+"d0h-od-cOi.normalTitle" = "TASKERS";
+
+/* Class = "UITextField"; placeholder = "Email Id"; ObjectID = "dJH-GU-lSB"; */
+"dJH-GU-lSB.placeholder" = "Email Id";
+
+/* Class = "UILabel"; text = "SignIn"; ObjectID = "dTa-jU-OWZ"; */
+"dTa-jU-OWZ.text" = "SignIn";
+
+/* Class = "UITextField"; placeholder = "Select User Type"; ObjectID = "erp-Sn-Exw"; */
+"erp-Sn-Exw.placeholder" = "Select User Type";
+
+/* Class = "UIButton"; normalTitle = "LOGIN"; ObjectID = "hqB-Ch-DsK"; */
+"hqB-Ch-DsK.normalTitle" = "LOGIN";
+
+/* Class = "UIButton"; normalTitle = "CONTINUE"; ObjectID = "jz5-GY-slw"; */
+"jz5-GY-slw.normalTitle" = "CONTINUE";
+
+/* Class = "UILabel"; text = "Enter your informations below or login with a social account"; ObjectID = "laP-xI-fPn"; */
+"laP-xI-fPn.text" = "Enter your informations below or login with a social account";
+
+/* Class = "UITextField"; placeholder = "First Name*"; ObjectID = "nqS-Xv-8Ke"; */
+"nqS-Xv-8Ke.placeholder" = "First Name*";
+
+/* Class = "UIButton"; normalTitle = "SIGN UP"; ObjectID = "pwM-Z1-ALH"; */
+"pwM-Z1-ALH.normalTitle" = "SIGN UP";
+
+/* Class = "UITextField"; placeholder = "Select Services*"; ObjectID = "tZv-C3-9YD"; */
+"tZv-C3-9YD.placeholder" = "Select Services*";
+
+/* Class = "UIButton"; normalTitle = "SEARCH PROVIDERS"; ObjectID = "yyF-SJ-WHQ"; */
+"yyF-SJ-WHQ.normalTitle" = "SEARCH PROVIDERS";
+
+/* Class = "UITextField"; placeholder = "Last Name*"; ObjectID = "yyN-53-pGb"; */
+"yyN-53-pGb.placeholder" = "Last Name*";

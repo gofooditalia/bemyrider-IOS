@@ -1,0 +1,1175 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A56C2DB7426F295DE1154FA3 /* Pods_GoRider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AA4752EAD962DC8D9E72AB /* Pods_GoRider.framework */; };
+		EE711AFB21073B08002B6619 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE711AFD21073B08002B6619 /* Localizable.strings */; };
+		EED591B22074D14700075B66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED591B02074D14700075B66 /* Main.storyboard */; };
+		EED591B72074D14700075B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED591B52074D14700075B66 /* LaunchScreen.storyboard */; };
+		F54AFE5E27DB5ACE0039AA91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F54AFE5D27DB5ACE0039AA91 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4046D2DB6DF1C354AEDEEA53 /* BulkInvoiceDownloadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkInvoiceDownloadViewModel.swift; sourceTree = "<group>"; };
+		571B48065ADFE1E5F3020497 /* Pods-GoRider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoRider.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoRider/Pods-GoRider.release.xcconfig"; sourceTree = "<group>"; };
+		7757838923D9C7AE008B845D /* NotificationBannerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NotificationBannerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7757838B23D9C7C1008B845D /* NotificationBannerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NotificationBannerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7757838F23D9C7C5008B845D /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7757839223D9C7C9008B845D /* MarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F6556ECBB83ACC16D515FA1 /* Pods-GoRider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoRider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoRider/Pods-GoRider.debug.xcconfig"; sourceTree = "<group>"; };
+		D6AA4752EAD962DC8D9E72AB /* Pods_GoRider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoRider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED591A92074D14700075B66 /* GoRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoRider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54AFE5D27DB5ACE0039AA91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EED591A62074D14700075B66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A56C2DB7426F295DE1154FA3 /* Pods_GoRider.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AC0345CE26BE72E75A0CD19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7757839223D9C7C9008B845D /* MarqueeLabel.framework */,
+				7757838F23D9C7C5008B845D /* SnapKit.framework */,
+				7757838B23D9C7C1008B845D /* NotificationBannerSwift.framework */,
+				7757838923D9C7AE008B845D /* NotificationBannerSwift.framework */,
+				D6AA4752EAD962DC8D9E72AB /* Pods_GoRider.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D7DCD8D1E43F23598579C80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F6556ECBB83ACC16D515FA1 /* Pods-GoRider.debug.xcconfig */,
+				571B48065ADFE1E5F3020497 /* Pods-GoRider.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		771C543723A211B000F868BB /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		773E35D9284F8EB300EE8988 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		779446FF2397CF4D0067E2DD /* Third Party Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F58629F327EA033D0082DAB9 /* CAPSPageMenu */,
+				F5E46F3727E31013001BE1D6 /* EmptyStateView */,
+				779447022397CF4D0067E2DD /* GoogleSearchLocation */,
+				779447042397CF4D0067E2DD /* FacebookManager */,
+			);
+			path = "Third Party Classes";
+			sourceTree = "<group>";
+		};
+		779447022397CF4D0067E2DD /* GoogleSearchLocation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GoogleSearchLocation;
+			sourceTree = "<group>";
+		};
+		779447042397CF4D0067E2DD /* FacebookManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FacebookManager;
+			sourceTree = "<group>";
+		};
+		846C79FB230ADA9F00D0A573 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		84B22F4D222428E100E5BBAE /* Info */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		EE16AA5B2078C75D00D3D7B2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				846C79FB230ADA9F00D0A573 /* Category */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EE2FEA0C2109B37A000BF8B4 /* ExtendServicePopUp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ExtendServicePopUp;
+			sourceTree = "<group>";
+		};
+		EE2FEA0F210A28C1000BF8B4 /* Raise Dispute PopUp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Raise Dispute PopUp";
+			sourceTree = "<group>";
+		};
+		EE4B192420760B590004220C /* SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SlideMenu;
+			sourceTree = "<group>";
+		};
+		EE4B192D207655AB0004220C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		EE4D4C4320B007200046319D /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		EE4F1602208B1C92009E4E52 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				EE4F160A208B6CF8009E4E52 /* MyWallet */,
+				EE4F1609208B6CF5009E4E52 /* MyWalletProvider */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		EE4F1609208B6CF5009E4E52 /* MyWalletProvider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyWalletProvider;
+			sourceTree = "<group>";
+		};
+		EE4F160A208B6CF8009E4E52 /* MyWallet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyWallet;
+			sourceTree = "<group>";
+		};
+		EE4F160F208B7921009E4E52 /* FavouriteSevices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FavouriteSevices;
+			sourceTree = "<group>";
+		};
+		EE5568BE20AC4272008ED820 /* API Calling */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "API Calling";
+			sourceTree = "<group>";
+		};
+		EE59789820933E2B003F77E8 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				EE85A31720DB913F0052BBB2 /* AddNewService */,
+				EE59789B20933E70003F77E8 /* MyServices */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		EE59789B20933E70003F77E8 /* MyServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyServices;
+			sourceTree = "<group>";
+		};
+		EE5A1A8320908018002B18BA /* Search Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Search Provider";
+			sourceTree = "<group>";
+		};
+		EE5C13CC2105A51600BDC352 /* PopUP Proposal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "PopUP Proposal";
+			sourceTree = "<group>";
+		};
+		EE6216EB2088E799005F23B8 /* InviteFriends */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = InviteFriends;
+			sourceTree = "<group>";
+		};
+		EE6C84D920A41157008AEB07 /* DisputeList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DisputeList;
+			sourceTree = "<group>";
+		};
+		EE6EF93C20A5BA5000C3F818 /* CustomerSiderServiceDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomerSiderServiceDetails;
+			sourceTree = "<group>";
+		};
+		EE6EF94120A5C67200C3F818 /* ProviderSideServiceDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProviderSideServiceDetails;
+			sourceTree = "<group>";
+		};
+		EE71B55620975CFB00AB456D /* ServiceDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServiceDetails;
+			sourceTree = "<group>";
+		};
+		EE76F2E22089E4B3003F1F50 /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PopUp;
+			sourceTree = "<group>";
+		};
+		EE76F728207F6FFE00CEB384 /* ProviderProfile */ = {
+			isa = PBXGroup;
+			children = (
+				EE96343A20D4F5BB0092E872 /* ReviewList */,
+			);
+			path = ProviderProfile;
+			sourceTree = "<group>";
+		};
+		EE77D803207C938600D32A41 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5E46F5F27E31944001BE1D6 /* BaseViewControllers */,
+				84B22F4D222428E100E5BBAE /* Info */,
+				EE7CED3C2108B56E000F7EB1 /* Select Language */,
+				EED60EBD210B7B6000F2581F /* MyServiceDetail */,
+				EE2FEA0F210A28C1000BF8B4 /* Raise Dispute PopUp */,
+				EE2FEA0C2109B37A000BF8B4 /* ExtendServicePopUp */,
+				EE5C13CC2105A51600BDC352 /* PopUP Proposal */,
+				EE85D2F820FC69C200A51919 /* PopUp Review */,
+				EEC735E520D2727800282CE2 /* ImageCropper */,
+				EE4D4C4320B007200046319D /* NavigationBar */,
+				EE6EF94120A5C67200C3F818 /* ProviderSideServiceDetails */,
+				EE6EF93C20A5BA5000C3F818 /* CustomerSiderServiceDetails */,
+				EE7C524F20A07865001F6B9E /* ServiceRequest */,
+				EE71B55620975CFB00AB456D /* ServiceDetails */,
+				EE59789820933E2B003F77E8 /* Provider */,
+				EE5A1A8320908018002B18BA /* Search Provider */,
+				EEC436E1208DFB57003A3D6D /* Notifications */,
+				EEC436D6208DD42D003A3D6D /* Messages */,
+				EE4F1602208B1C92009E4E52 /* Wallet */,
+				EEC286772084BD8500126613 /* SingleViews */,
+				EE76F728207F6FFE00CEB384 /* ProviderProfile */,
+				EE16AA5B2078C75D00D3D7B2 /* Login */,
+				EE4B192420760B590004220C /* SlideMenu */,
+				F5E46F5C27E311E9001BE1D6 /* Home */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EE7C524F20A07865001F6B9E /* ServiceRequest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServiceRequest;
+			sourceTree = "<group>";
+		};
+		EE7CED372108B4A6000F7EB1 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		EE7CED3C2108B56E000F7EB1 /* Select Language */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Select Language";
+			sourceTree = "<group>";
+		};
+		EE85A31720DB913F0052BBB2 /* AddNewService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddNewService;
+			sourceTree = "<group>";
+		};
+		EE85D2F820FC69C200A51919 /* PopUp Review */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "PopUp Review";
+			sourceTree = "<group>";
+		};
+		EE96343A20D4F5BB0092E872 /* ReviewList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReviewList;
+			sourceTree = "<group>";
+		};
+		EEC286772084BD8500126613 /* SingleViews */ = {
+			isa = PBXGroup;
+			children = (
+				EE6C84D920A41157008AEB07 /* DisputeList */,
+				EE4F160F208B7921009E4E52 /* FavouriteSevices */,
+				EE76F2E22089E4B3003F1F50 /* PopUp */,
+				EE6216EB2088E799005F23B8 /* InviteFriends */,
+			);
+			path = SingleViews;
+			sourceTree = "<group>";
+		};
+		EEC436D6208DD42D003A3D6D /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		EEC436E1208DFB57003A3D6D /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		EEC735E520D2727800282CE2 /* ImageCropper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageCropper;
+			sourceTree = "<group>";
+		};
+		EED591A02074D14700075B66 = {
+			isa = PBXGroup;
+			children = (
+				EED591AB2074D14700075B66 /* TaskGator */,
+				EED591AA2074D14700075B66 /* Products */,
+				4D7DCD8D1E43F23598579C80 /* Pods */,
+				2AC0345CE26BE72E75A0CD19 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+			wrapsLines = 0;
+		};
+		EED591AA2074D14700075B66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EED591A92074D14700075B66 /* GoRider.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EED591AB2074D14700075B66 /* TaskGator */ = {
+			isa = PBXGroup;
+			children = (
+				773E35D9284F8EB300EE8988 /* Onboarding */,
+				EE7CED372108B4A6000F7EB1 /* SplashScreen */,
+				EE77D803207C938600D32A41 /* ViewControllers */,
+				EE4B192D207655AB0004220C /* Font */,
+				779446FF2397CF4D0067E2DD /* Third Party Classes */,
+				771C543723A211B000F868BB /* HelperClasses */,
+				EE5568BE20AC4272008ED820 /* API Calling */,
+				EED591C02074DB2C00075B66 /* StringConstant */,
+				EED591BF2074D23D00075B66 /* User */,
+				EED591BE2074D22300075B66 /* Patner */,
+				EED591B02074D14700075B66 /* Main.storyboard */,
+				EED591B52074D14700075B66 /* LaunchScreen.storyboard */,
+				F54AFE5D27DB5ACE0039AA91 /* GoogleService-Info.plist */,
+				EE711AFD21073B08002B6619 /* Localizable.strings */,
+							4046D2DB6DF1C354AEDEEA53 /* BulkInvoiceDownloadViewModel.swift */,
+);
+			path = TaskGator;
+			sourceTree = "<group>";
+		};
+		EED591BE2074D22300075B66 /* Patner */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Patner;
+			sourceTree = "<group>";
+		};
+		EED591BF2074D23D00075B66 /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		EED591C02074DB2C00075B66 /* StringConstant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StringConstant;
+			sourceTree = "<group>";
+		};
+		EED60EBD210B7B6000F2581F /* MyServiceDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyServiceDetail;
+			sourceTree = "<group>";
+		};
+		F58629F327EA033D0082DAB9 /* CAPSPageMenu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CAPSPageMenu;
+			sourceTree = "<group>";
+		};
+		F5E46F3727E31013001BE1D6 /* EmptyStateView */ = {
+			isa = PBXGroup;
+			children = (
+				F5E46F3827E31013001BE1D6 /* Resources */,
+				F5E46F3D27E31013001BE1D6 /* Extensions */,
+				F5E46F4127E31013001BE1D6 /* Positions */,
+				F5E46F4427E31013001BE1D6 /* AssociationPolicy */,
+				F5E46F4627E31013001BE1D6 /* Protocols */,
+				F5E46F4927E31013001BE1D6 /* Animations */,
+			);
+			path = EmptyStateView;
+			sourceTree = "<group>";
+		};
+		F5E46F3827E31013001BE1D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F5E46F3D27E31013001BE1D6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F5E46F4127E31013001BE1D6 /* Positions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Positions;
+			sourceTree = "<group>";
+		};
+		F5E46F4427E31013001BE1D6 /* AssociationPolicy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AssociationPolicy;
+			sourceTree = "<group>";
+		};
+		F5E46F4627E31013001BE1D6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F5E46F4927E31013001BE1D6 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		F5E46F5C27E311E9001BE1D6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F5E46F5F27E31944001BE1D6 /* BaseViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5E46F6027E31944001BE1D6 /* TabBar Views */,
+				F5E46F6427E31944001BE1D6 /* Navigation Controller */,
+			);
+			path = BaseViewControllers;
+			sourceTree = "<group>";
+		};
+		F5E46F6027E31944001BE1D6 /* TabBar Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "TabBar Views";
+			sourceTree = "<group>";
+		};
+		F5E46F6427E31944001BE1D6 /* Navigation Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Navigation Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EED591A82074D14700075B66 /* GoRider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED591BB2074D14700075B66 /* Build configuration list for PBXNativeTarget "GoRider" */;
+			buildPhases = (
+				A7EFFB762FF7EB00A4B5223F /* [CP] Check Pods Manifest.lock */,
+				EED591A52074D14700075B66 /* Sources */,
+				EED591A62074D14700075B66 /* Frameworks */,
+				EED591A72074D14700075B66 /* Resources */,
+				70AE6A12B6755E2B208CF5AB /* [CP] Embed Pods Frameworks */,
+				E5F4C7BE618F96BB7D037C77 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoRider;
+			productName = Talabtech;
+			productReference = EED591A92074D14700075B66 /* GoRider.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EED591A12074D14700075B66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = "NCT 24";
+				TargetAttributes = {
+					EED591A82074D14700075B66 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0940;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = EED591A42074D14700075B66 /* Build configuration list for PBXProject "GoRider" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+				"pt-PT",
+				it,
+			);
+			mainGroup = EED591A02074D14700075B66;
+			productRefGroup = EED591AA2074D14700075B66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EED591A82074D14700075B66 /* GoRider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EED591A72074D14700075B66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE4AAEB8208F452900A358C5 /* NotificationSettingCell.xib in Resources */,
+				F5E46F6B27E334A1001BE1D6 /* Home.storyboard in Resources */,
+				EE7C524E20A07014001F6B9E /* ServiceRequest.storyboard in Resources */,
+				F5723B1127BC20470083D99D /* Media.xcassets in Resources */,
+				EE4F1608208B2025009E4E52 /* MyWalletCell.xib in Resources */,
+				EE76F2E12089DC6D003F1F50 /* PopUp.storyboard in Resources */,
+				EE17F79D211AE29D00EA02E6 /* Assets.xcassets in Resources */,
+				EE85A31B20DB91F30052BBB2 /* AddNewServiceImageCell.xib in Resources */,
+				EE891F662077808A00B7675C /* Roboto-Thin.ttf in Resources */,
+				EED591B72074D14700075B66 /* LaunchScreen.storyboard in Resources */,
+				EE4B1933207655AB0004220C /* Roboto-Regular.ttf in Resources */,
+				EE4B192C20760D130004220C /* LeftMenuCell.xib in Resources */,
+				F54AFE5E27DB5ACE0039AA91 /* GoogleService-Info.plist in Resources */,
+				EEC436E0208DFB32003A3D6D /* Notifications.storyboard in Resources */,
+				EE4B1932207655AB0004220C /* Roboto-Medium.ttf in Resources */,
+				EE76F727207F6F7400CEB384 /* Profiles.storyboard in Resources */,
+				EE6ADBA120D7DBCA00ABEF9D /* ImageCropper.storyboard in Resources */,
+				EE711AFB21073B08002B6619 /* Localizable.strings in Resources */,
+				EE7CED362108B46E000F7EB1 /* ios-splash-screen.png in Resources */,
+				EE5A1A8220906CAA002B18BA /* SearchProvider.storyboard in Resources */,
+				F5862A0527EA09F80082DAB9 /* ProviderCell.xib in Resources */,
+				EE484E4620A1B3110013AED0 /* ServiceRequestCell.xib in Resources */,
+				8436881F231925CE00030BA1 /* ProviderSidePaymentHistoryCell.xib in Resources */,
+				EE5A1A892090873D002B18BA /* SearchProviderCell.xib in Resources */,
+				EE68E38F2091D89700530375 /* ChatReceiveCell.xib in Resources */,
+				EE76F72E207F8A5900CEB384 /* Image-Place-Holder.png in Resources */,
+				EE76F72C207F8A4000CEB384 /* small-Image-Place-Holder.png in Resources */,
+				EEB96EBF20FF7B0E0094B3C0 /* ProposalMsgCell.xib in Resources */,
+				EE4F1613208B7954009E4E52 /* FavouriteCell.xib in Resources */,
+				EE59789F20933E95003F77E8 /* MyServicesCell.xib in Resources */,
+				EE6EF93B20A5B19700C3F818 /* ProviderSideServiceDetails.storyboard in Resources */,
+				EE96343E20D4F6090092E872 /* ReviewCell.xib in Resources */,
+				EE59789720933DCA003F77E8 /* Provider.storyboard in Resources */,
+				EE71B5552097552100AB456D /* ServiceProviderDetail.storyboard in Resources */,
+				EE4B1931207655AB0004220C /* Roboto-Bold.ttf in Resources */,
+				EED591B22074D14700075B66 /* Main.storyboard in Resources */,
+				77B1F45423E82E9000C6F420 /* LinkedInLoginVC.storyboard in Resources */,
+				EE6216EF2088E7CA005F23B8 /* InviteFriendCell.xib in Resources */,
+				F5E46F4C27E31013001BE1D6 /* EmptyStateView.xib in Resources */,
+				EE7A489E207E27C300709C5F /* SingleViews.storyboard in Resources */,
+				EE68E38B2091C27900530375 /* ChatCell.xib in Resources */,
+				EE16AA652078E6EA00D3D7B2 /* StatusBarView.xib in Resources */,
+				846C79F6230A88A300D0A573 /* CategoryCell.xib in Resources */,
+				77E7036123F52446005627FB /* ToDo.rtf in Resources */,
+				842603E3230C12CC00E576CD /* CategoryTaskersCell.xib in Resources */,
+				EEC436DA208DD603003A3D6D /* Messages.storyboard in Resources */,
+				EEC5B3C220F4B4BC00E77855 /* CustomerSideServiceDetails.storyboard in Resources */,
+				EEC436E7208DFEE0003A3D6D /* NotificationCell.xib in Resources */,
+				EE6C84DF20A412D8008AEB07 /* DisputeCell.xib in Resources */,
+				EE16AA5D2078CDD800D3D7B2 /* NavigationBarView.xib in Resources */,
+				EE4A336B209AE8D100793BBE /* innerStartTabCell.xib in Resources */,
+				846C7A05230ADF0100D0A573 /* CategoryServicesCell.xib in Resources */,
+				EE4A336F209B2DBF00793BBE /* innerGalleryTabCell.xib in Resources */,
+				EE4F1601208B148C009E4E52 /* Wallet.storyboard in Resources */,
+				7740E106285382770033869E /* Onboarding.storyboard in Resources */,
+				EEC436DE208DDB6F003A3D6D /* MessagesCell.xib in Resources */,
+				EED60EBC210B7B3800F2581F /* MyServiceDetail.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70AE6A12B6755E2B208CF5AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoRider/Pods-GoRider-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleSignIn/GoogleSignIn.framework",
+				"${BUILT_PRODUCTS_DIR}/IOSLinkedInAPIFix1/IOSLinkedInAPIFix1.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
+				"${BUILT_PRODUCTS_DIR}/LinkedinSwift/LinkedinSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MOLH/MOLH.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RangeSeekSlider/RangeSeekSlider.framework",
+				"${BUILT_PRODUCTS_DIR}/ReverseExtension/ReverseExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleSignIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IOSLinkedInAPIFix1.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LinkedinSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOLH.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RangeSeekSlider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReverseExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoRider/Pods-GoRider-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7EFFB762FF7EB00A4B5223F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoRider-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5F4C7BE618F96BB7D037C77 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoRider/Pods-GoRider-resources.sh",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoRider/Pods-GoRider-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EED591A52074D14700075B66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5862A0027EA033D0082DAB9 /* CAPSPageMenuConfiguration.swift in Sources */,
+				EEB96EBE20FF7B0E0094B3C0 /* ProposalMsgCell.swift in Sources */,
+				F5E46F4D27E31013001BE1D6 /* EmptyStateFormat.swift in Sources */,
+				EE6EF94520A5D1E900C3F818 /* ProviderSideServicePageVC.swift in Sources */,
+				EE5978932092EF3B003F77E8 /* ProviderFilterVC.swift in Sources */,
+				EE54101B20A9CA8200D95F35 /* DepositAmountVC.swift in Sources */,
+				EEC436DD208DDB6F003A3D6D /* MessagesCell.swift in Sources */,
+				771C544923A211B000F868BB /* BaseViewController.swift in Sources */,
+				EE484E4820A1C00E0013AED0 /* ServiceRequestTableVC.swift in Sources */,
+				F5E46F5327E31013001BE1D6 /* EmptyStateView+Positions.swift in Sources */,
+				EE5A1A882090873D002B18BA /* SearchProviderCell.swift in Sources */,
+				EED591AF2074D14700075B66 /* HomeVC.swift in Sources */,
+				EE7C525120A0793C001F6B9E /* ServiceRequest.swift in Sources */,
+				EE2FEA0E2109B3C1000BF8B4 /* ExtendServicePopUp.swift in Sources */,
+				EE4A336E209B2DBF00793BBE /* innerGalleryTabCell.swift in Sources */,
+				EE16AA612078DEC800D3D7B2 /* LoginVC.swift in Sources */,
+				EE6C84DB20A41198008AEB07 /* DisputeListVC.swift in Sources */,
+				EE85A31A20DB91F30052BBB2 /* AddNewServiceImageCell.swift in Sources */,
+				7740E1082853830F0033869E /* FirstVC.swift in Sources */,
+				F5862A0127EA033D0082DAB9 /* CAPSPageMenu.swift in Sources */,
+				EE59789520932C5D003F77E8 /* PaymentHistoryVC.swift in Sources */,
+				F5E46F5827E31013001BE1D6 /* EmptyStateAnimation.swift in Sources */,
+				F58629FF27EA033D0082DAB9 /* CAPSPageMenu+UIConfiguration.swift in Sources */,
+				EE76F2E8208A1F9B003F1F50 /* SendInviteVC.swift in Sources */,
+				EEC286792084BE0600126613 /* AccountSettingVC.swift in Sources */,
+				EE4A336A209AE8D100793BBE /* innerStartTabCell.swift in Sources */,
+				EE6C84DE20A412D8008AEB07 /* DisputeCell.swift in Sources */,
+				771C544A23A211B000F868BB /* BaseTableViewCell.swift in Sources */,
+				F5E46F5227E31013001BE1D6 /* EmptyStateView.swift in Sources */,
+				EE5A1A8520908255002B18BA /* SearachProviderVC.swift in Sources */,
+				77916B8623D70E4F003D21DE /* NotificationManager.swift in Sources */,
+				EE571AA020E751040009EC93 /* PayPalWebVC.swift in Sources */,
+				771C544723A211B000F868BB /* LinkedInManager.swift in Sources */,
+				EEC735E720D2728900282CE2 /* ImageCropper.swift in Sources */,
+				F5E46F4F27E31013001BE1D6 /* NibView.swift in Sources */,
+				F5E46F4E27E31013001BE1D6 /* EmptyState.swift in Sources */,
+				7740E10C285383280033869E /* ThirdVC.swift in Sources */,
+				EE16AA5F2078CF0200D3D7B2 /* NavigationBarView.swift in Sources */,
+				EE9D28722080948900BE378F /* EditProfileCustomerVC.swift in Sources */,
+				773E35DB284F8ED300EE8988 /* OnboardingViewController.swift in Sources */,
+				EED591AD2074D14700075B66 /* AppDelegate.swift in Sources */,
+				84228E5D230D633200A51E5A /* CustomerSideProviderProfileVC.swift in Sources */,
+				77B1F45023E82E5F00C6F420 /* LinkedinHelper.swift in Sources */,
+				EEC436E3208DFE45003A3D6D /* NotificationVC.swift in Sources */,
+				F592325D27F43EEA008D1CFF /* TextFields.swift in Sources */,
+				EE4F1607208B2025009E4E52 /* MyWalletCell.swift in Sources */,
+				77AAA31323C5B84B00BBB0D7 /* Util.swift in Sources */,
+				843688192319259D00030BA1 /* ProviderSidePaymenyHistroyVC.swift in Sources */,
+				771C545123A211B000F868BB /* AppConfigure.swift in Sources */,
+				EE4A3367209AD63E00793BBE /* innerGalleryTabVC.swift in Sources */,
+				F58629FC27EA033D0082DAB9 /* CAPSPageMenu+Options.swift in Sources */,
+				EE68E38A2091C27900530375 /* ChatCell.swift in Sources */,
+				846C79F5230A88A300D0A573 /* CategoryCell.swift in Sources */,
+				EE6216EA2088E566005F23B8 /* InviteFriendVC.swift in Sources */,
+				771C544B23A211B000F868BB /* CustomControl.swift in Sources */,
+				7740E10A2853831E0033869E /* SecondVC.swift in Sources */,
+				771C544E23A211B000F868BB /* AttachmentHandler.swift in Sources */,
+				EE6216EE2088E7CA005F23B8 /* InviteFriendCell.swift in Sources */,
+				F5E46F6827E31944001BE1D6 /* BasicContentView.swift in Sources */,
+				EE59789E20933E95003F77E8 /* MyServicesCell.swift in Sources */,
+				EE2FEA11210A28E4000BF8B4 /* RaiseDisputeVC.swift in Sources */,
+				846C79FF230ADB6700D0A573 /* CategoryDetaliPageVC.swift in Sources */,
+				EE25902820A44CF1009DC456 /* ProviderSrvsReqRecent.swift in Sources */,
+				84B22F512224299400E5BBAE /* infoPageDetailVC.swift in Sources */,
+				EE484E4520A1B3110013AED0 /* ServiceRequestCell.swift in Sources */,
+				771C544F23A211B000F868BB /* CustomFont.swift in Sources */,
+				EE5C13CE2105A58000BDC352 /* ProposalPopUpVC.swift in Sources */,
+				F5862A0427EA09F80082DAB9 /* ProviderCell.swift in Sources */,
+				EE4AAEB7208F452900A358C5 /* NotificationSettingCell.swift in Sources */,
+				846C79F2230A888C00D0A573 /* CategoryVC.swift in Sources */,
+				771C544623A211B000F868BB /* DataManager.swift in Sources */,
+				EE5A1A8B2090B8C7002B18BA /* ChatVC.swift in Sources */,
+				EE4F160C208B6D37009E4E52 /* MyWalletProvider.swift in Sources */,
+				F5E46F6927E31944001BE1D6 /* InteractivePopNavigationController.swift in Sources */,
+				F5862A0727EA0B310082DAB9 /* Labels.swift in Sources */,
+				EE76F2E62089F5F4003F1F50 /* RedeemedAmountVC.swift in Sources */,
+				EE6EF93E20A5BAE800C3F818 /* CustomerSideServiceDetailVC.swift in Sources */,
+				84B22F4F2224297F00E5BBAE /* infoPageListVC.swift in Sources */,
+				EEC436D8208DD49D003A3D6D /* MessagesVC.swift in Sources */,
+				EE73735D210F0730001AA031 /* innerServiceTabForEditService.swift in Sources */,
+				EE6216E82088ACBB005F23B8 /* DepositeFundVC.swift in Sources */,
+				EE43A0B820998AE200732921 /* PageViewController.swift in Sources */,
+				F5E46F5027E31013001BE1D6 /* UIView+EmptyState.swift in Sources */,
+				7794470F2397CF4D0067E2DD /* FacebookSignInManager.swift in Sources */,
+				771C545023A211B000F868BB /* CloudDataManager.swift in Sources */,
+				EE16AA632078E6C700D3D7B2 /* StatusBarView.swift in Sources */,
+				842603E2230C12CC00E576CD /* CategoryTaskersCell.swift in Sources */,
+				846C7A01230ADB8500D0A573 /* CategoryServicesVC.swift in Sources */,
+				77EB921723E8105B008D00F3 /* AppleSignInManager.swift in Sources */,
+				EE4F160E208B76C4009E4E52 /* FavouriteServicesVC.swift in Sources */,
+				EE54101920A99A9100D95F35 /* InnerInvoiceTabVC.swift in Sources */,
+				EE7A48A2207E371D00709C5F /* FeedBackVC.swift in Sources */,
+				EE85D2FA20FC6A0C00A51919 /* ReviewPopUpVC.swift in Sources */,
+				EE4B192B20760D130004220C /* LeftMenuCell.swift in Sources */,
+				EE68E38E2091D89700530375 /* ChatReceiveCell.swift in Sources */,
+				EE9D28702080947500BE378F /* EditProfileProviderVC.swift in Sources */,
+				EE7A48A0207E2BDD00709C5F /* ContactUsVC.swift in Sources */,
+				EE6EF94320A5D1D600C3F818 /* ProviderSideServiceDetailVC.swift in Sources */,
+				8436881E231925CE00030BA1 /* ProviderSidePaymentHistoryCell.swift in Sources */,
+				771C544523A211B000F868BB /* Constant.swift in Sources */,
+				77B1F45123E82E5F00C6F420 /* LinkedInConfig.swift in Sources */,
+				EE4A3363209AD60000793BBE /* innerUserTabVC.swift in Sources */,
+				EE4A3365209AD61A00793BBE /* innerStarTabVC.swift in Sources */,
+				EEC436E6208DFEE0003A3D6D /* NotificationCell.swift in Sources */,
+				EE76F2E42089E50B003F1F50 /* AmountPopUpVC.swift in Sources */,
+				846C79F8230A9EFA00D0A573 /* SubCategoryVC.swift in Sources */,
+				F5E46F5927E31013001BE1D6 /* EmptyStateView+Animations.swift in Sources */,
+				F5E46F5E27E312BB001BE1D6 /* MenuVC.swift in Sources */,
+				EE71B55820975D1600AB456D /* ServiceDetailVC.swift in Sources */,
+				F5E46F5B27E311E3001BE1D6 /* HomeViewController.swift in Sources */,
+				7740E10E2853833A0033869E /* FourthVC.swift in Sources */,
+				EED60EBF210B7B8400F2581F /* MyServcieDetailVC.swift in Sources */,
+				EE96343D20D4F6090092E872 /* ReviewCell.swift in Sources */,
+				EE5A508B20A3115100B602E6 /* CustmrSideServcHistory.swift in Sources */,
+				F58629F227E9FF820082DAB9 /* ProviderListVC.swift in Sources */,
+				F58629FE27EA033D0082DAB9 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */,
+				EE76F72A207F703100CEB384 /* ProviderProfileVC.swift in Sources */,
+				F5E46F6627E31944001BE1D6 /* IrregularityContentView.swift in Sources */,
+				F5E46F5127E31013001BE1D6 /* UIView+Nib.swift in Sources */,
+				EE484E4220A18B000013AED0 /* PageVCServiceRequest.swift in Sources */,
+				846C7A07230AE0CA00D0A573 /* CategoryTaskerVC.swift in Sources */,
+				F58629FB27EA033D0082DAB9 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */,
+				EED591C22074DB2C00075B66 /* StringConstants.swift in Sources */,
+				EE4F1612208B7954009E4E52 /* FavouriteCell.swift in Sources */,
+				F5E46F5427E31013001BE1D6 /* EmptyStatePosition.swift in Sources */,
+				771C544D23A211B000F868BB /* Extenstions.swift in Sources */,
+				F5E46F5627E31013001BE1D6 /* CustomState.swift in Sources */,
+				EE4B192620760B890004220C /* LeftSideMenu.swift in Sources */,
+				7794470E2397CF4D0067E2DD /* GooglePlaceAPI.swift in Sources */,
+				EE7CED392108B4DC000F7EB1 /* SplashVC.swift in Sources */,
+				EE71B5532097370900AB456D /* AddNewServiceVC.swift in Sources */,
+				EE4F1604208B1CA9009E4E52 /* MyWalletVC.swift in Sources */,
+				846C79FD230ADAB600D0A573 /* CategoryDetaliVC.swift in Sources */,
+				F5E46F5727E31013001BE1D6 /* NibLoadable.swift in Sources */,
+				EE16AA692078FE8200D3D7B2 /* SignUpVC.swift in Sources */,
+				F58629FD27EA033D0082DAB9 /* MenuItemView.swift in Sources */,
+				F5DB5E1E27F3542900C9EC34 /* MenuCell.swift in Sources */,
+				EE71B5512097176600AB456D /* FinancialInfoVC.swift in Sources */,
+				7740E1102853834A0033869E /* FifthVC.swift in Sources */,
+				EE4AAEB4208F426500A358C5 /* NotificationSettings.swift in Sources */,
+				EE59789A20933E46003F77E8 /* MyServiceVC.swift in Sources */,
+				77B1F45523E82E9000C6F420 /* LinkedInLoginVC.swift in Sources */,
+				F5E46F6727E31944001BE1D6 /* BouncesContentView.swift in Sources */,
+				F5E46F5527E31013001BE1D6 /* AssociationPolicy.swift in Sources */,
+				771C544823A211B000F868BB /* CustomColor.swift in Sources */,
+				EE7CED3E2108B58B000F7EB1 /* LanuguageVC.swift in Sources */,
+				846C7A04230ADF0100D0A573 /* CategoryServicesCell.swift in Sources */,
+				EE96343920D4F4640092E872 /* ReviewList.swift in Sources */,
+				EE9D286E208085B600BE378F /* CustomerProfileVC.swift in Sources */,
+				771C544C23A211B000F868BB /* UserData.swift in Sources */,
+				EE81E39120AEFE5400C628A3 /* Modal.swift in Sources */,
+				EE81E38F20AEFE4000C628A3 /* WebRequester.swift in Sources */,
+				EE25902A20A498D0009DC456 /* DisputeDetailVC.swift in Sources */,
+				EE6EF94020A5BBBC00C3F818 /* CustomerSideServicePageVC.swift in Sources */,
+				EE4A3361209AD5EB00793BBE /* innerServiceTabVC.swift in Sources */,
+				720A513FA958C2B3F86E60B8 /* BulkInvoicePeriodSelector.swift in Sources */,
+				0F6103ABF950CFAB0DAB6A64 /* FloatingActionButton.swift in Sources */,
+				BCD181572C9B0B42262FC426 /* FileDownloadManager.swift in Sources */,
+);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE711AFD21073B08002B6619 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		EED591B02074D14700075B66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EED591B52074D14700075B66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EED591B92074D14700075B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EED591BA2074D14700075B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EED591BC2074D14700075B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F6556ECBB83ACC16D515FA1 /* Pods-GoRider.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TaskGator/TaskGator.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEVELOPMENT_TEAM = 79K6W58FPR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TaskGator/LinkedInFramework",
+				);
+				INFOPLIST_FILE = TaskGator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.bemyrider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TaskGator/TaskGator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EED591BD2074D14700075B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 571B48065ADFE1E5F3020497 /* Pods-GoRider.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TaskGator/TaskGator.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEVELOPMENT_TEAM = 79K6W58FPR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TaskGator/LinkedInFramework",
+				);
+				INFOPLIST_FILE = TaskGator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.bemyrider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TaskGator/TaskGator-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EED591A42074D14700075B66 /* Build configuration list for PBXProject "GoRider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED591B92074D14700075B66 /* Debug */,
+				EED591BA2074D14700075B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED591BB2074D14700075B66 /* Build configuration list for PBXNativeTarget "GoRider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED591BC2074D14700075B66 /* Debug */,
+				EED591BD2074D14700075B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EED591A12074D14700075B66 /* Project object */;
+}

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="187" id="ezD-9h-Al9" customClass="ChatReceiveCell" customModule="GoRider" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="187"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ezD-9h-Al9" id="sT7-rq-IEe">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="187"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="ic_background_right" translatesAutoresizingMaskIntoConstraints="NO" id="No9-qW-FAa">
+                        <rect key="frame" x="8" y="8" width="281" height="148.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="small-Image-Place-Holder.png" translatesAutoresizingMaskIntoConstraints="NO" id="vgt-pC-b34">
+                        <rect key="frame" x="297" y="12" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="6aW-Mb-CFD"/>
+                            <constraint firstAttribute="width" secondItem="vgt-pC-b34" secondAttribute="height" multiplier="1:1" id="idu-fP-X2Z"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sd-T9-CHy">
+                        <rect key="frame" x="18" y="18" width="241" height="128.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Service Provider name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Td-k0-BY3">
+                                <rect key="frame" x="0.0" y="8" width="233" height="18"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Service ProviderService ProviderService ProviderService ProviderService ProviderService Provider" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mE8-iK-Edh">
+                                <rect key="frame" x="0.0" y="34" width="233" height="63.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgx-SS-cfh">
+                                <rect key="frame" x="27" y="98" width="157" height="30"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <state key="normal" title="Download Attachement">
+                                    <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickAttachment:" destination="ezD-9h-Al9" eventType="touchUpInside" id="VGC-yN-tZQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dM-P8-sHq">
+                                <rect key="frame" x="0.0" y="105.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="4JZ-Xy-mvh"/>
+                                    <constraint firstAttribute="width" secondItem="8dM-P8-sHq" secondAttribute="height" multiplier="1:1" id="fZE-HL-o4n"/>
+                                </constraints>
+                                <state key="normal" image="downloadIco"/>
+                                <connections>
+                                    <action selector="onClickAttachment:" destination="ezD-9h-Al9" eventType="touchUpInside" id="vcV-KF-S27"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bgx-SS-cfh" firstAttribute="leading" secondItem="8dM-P8-sHq" secondAttribute="trailing" constant="12" id="5Xy-Ud-Fl3"/>
+                            <constraint firstItem="mE8-iK-Edh" firstAttribute="leading" secondItem="2sd-T9-CHy" secondAttribute="leading" id="AQK-Lw-zCO"/>
+                            <constraint firstItem="mE8-iK-Edh" firstAttribute="top" secondItem="5Td-k0-BY3" secondAttribute="bottom" constant="8" id="EyB-yg-6Gm"/>
+                            <constraint firstAttribute="bottom" secondItem="8dM-P8-sHq" secondAttribute="bottom" constant="8" id="L0p-dn-veP"/>
+                            <constraint firstAttribute="trailing" secondItem="mE8-iK-Edh" secondAttribute="trailing" constant="8" id="N8t-vH-L27"/>
+                            <constraint firstAttribute="trailing" secondItem="5Td-k0-BY3" secondAttribute="trailing" constant="8" id="NGk-Un-aeQ"/>
+                            <constraint firstItem="5Td-k0-BY3" firstAttribute="leading" secondItem="2sd-T9-CHy" secondAttribute="leading" id="PEV-Ou-y8R"/>
+                            <constraint firstItem="8dM-P8-sHq" firstAttribute="centerY" secondItem="bgx-SS-cfh" secondAttribute="centerY" id="dyP-n0-KX1"/>
+                            <constraint firstItem="5Td-k0-BY3" firstAttribute="top" secondItem="2sd-T9-CHy" secondAttribute="top" constant="8" id="hjN-Hi-0Tp"/>
+                            <constraint firstItem="8dM-P8-sHq" firstAttribute="leading" secondItem="2sd-T9-CHy" secondAttribute="leading" id="oGk-Yq-khd"/>
+                            <constraint firstItem="8dM-P8-sHq" firstAttribute="top" secondItem="mE8-iK-Edh" secondAttribute="bottom" constant="8" id="oK1-gr-tXz"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="03-Apr-2018 3:45 PM" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jij-xq-I4p">
+                        <rect key="frame" x="8" y="164.5" width="113" height="14.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="jij-xq-I4p" secondAttribute="bottom" constant="8" id="1UT-k8-mFi"/>
+                    <constraint firstItem="jij-xq-I4p" firstAttribute="leading" secondItem="No9-qW-FAa" secondAttribute="leading" id="7A4-Ui-0dH"/>
+                    <constraint firstItem="2sd-T9-CHy" firstAttribute="trailing" secondItem="No9-qW-FAa" secondAttribute="trailing" constant="-30" id="HVI-oP-d40"/>
+                    <constraint firstItem="No9-qW-FAa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sT7-rq-IEe" secondAttribute="leading" constant="8" id="JBF-ef-bRJ"/>
+                    <constraint firstItem="vgt-pC-b34" firstAttribute="top" secondItem="sT7-rq-IEe" secondAttribute="top" constant="12" id="M1B-3n-FYq"/>
+                    <constraint firstItem="2sd-T9-CHy" firstAttribute="leading" secondItem="No9-qW-FAa" secondAttribute="leading" constant="10" id="Q9M-gO-afQ"/>
+                    <constraint firstItem="jij-xq-I4p" firstAttribute="top" secondItem="No9-qW-FAa" secondAttribute="bottom" constant="8" id="RDB-ow-f15"/>
+                    <constraint firstItem="No9-qW-FAa" firstAttribute="top" secondItem="sT7-rq-IEe" secondAttribute="top" constant="8" id="gwq-7S-dDB"/>
+                    <constraint firstAttribute="trailing" secondItem="vgt-pC-b34" secondAttribute="trailing" constant="8" id="hMS-HP-W8k"/>
+                    <constraint firstItem="2sd-T9-CHy" firstAttribute="top" secondItem="No9-qW-FAa" secondAttribute="top" constant="10" id="iOU-UH-Rdu"/>
+                    <constraint firstItem="2sd-T9-CHy" firstAttribute="bottom" secondItem="No9-qW-FAa" secondAttribute="bottom" constant="-10" id="md2-te-os7"/>
+                    <constraint firstItem="vgt-pC-b34" firstAttribute="leading" secondItem="No9-qW-FAa" secondAttribute="trailing" constant="8" id="r0v-nt-JLS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="d5s-iC-EXb"/>
+            <connections>
+                <outlet property="btnAttachmentHeight" destination="4JZ-Xy-mvh" id="njF-6i-WJP"/>
+                <outlet property="btnAttachmnetBottom" destination="L0p-dn-veP" id="dIN-Hx-i75"/>
+                <outlet property="btnAttachmnetTop" destination="oK1-gr-tXz" id="E0b-gg-NqU"/>
+                <outlet property="btnViewAttach" destination="bgx-SS-cfh" id="0fG-Ju-fTI"/>
+                <outlet property="bubbleImageView" destination="No9-qW-FAa" id="hed-xf-fmT"/>
+                <outlet property="imgUser" destination="vgt-pC-b34" id="2Uy-T6-zwo"/>
+                <outlet property="lblDate" destination="jij-xq-I4p" id="k60-64-WTS"/>
+                <outlet property="lblMessage" destination="mE8-iK-Edh" id="CAJ-vK-h4t"/>
+                <outlet property="lblProviderName" destination="5Td-k0-BY3" id="5Jy-ZP-dgi"/>
+            </connections>
+            <point key="canvasLocation" x="43" y="129"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="downloadIco" width="19" height="19"/>
+        <image name="ic_background_right" width="395" height="91"/>
+        <image name="small-Image-Place-Holder.png" width="1024" height="1024"/>
+    </resources>
+</document>

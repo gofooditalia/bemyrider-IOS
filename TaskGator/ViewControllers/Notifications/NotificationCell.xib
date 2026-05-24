@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="188" id="a96-yu-SO8" customClass="NotificationCell" customModule="GoTasker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a96-yu-SO8" id="gbM-Tt-rzG">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlx-wE-mbb">
+                        <rect key="frame" x="16" y="11" width="288" height="138"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5X-FM-SOv">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="80"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="f6B-xr-1to">
+                                        <rect key="frame" x="15" y="15" width="258" height="50"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XFX-fd-06P">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="small-Image-Place-Holder.png" translatesAutoresizingMaskIntoConstraints="NO" id="EBy-ZJ-QEz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="SDc-R7-e8D"/>
+                                                            <constraint firstAttribute="height" constant="50" id="eVY-bJ-WEQ"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="BCe-P8-1pB"/>
+                                                    <constraint firstAttribute="height" constant="50" id="ugT-Qr-zNn"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="v58-Uy-8qx">
+                                                <rect key="frame" x="65" y="0.0" width="193" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Provider Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbZ-gz-qxx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="193" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="s1V-T2-AOE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                        <color key="textColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="19 Apr 2018 - 11:52 AM" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypl-wg-Ml1">
+                                                        <rect key="frame" x="0.0" y="30" width="193" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="z6e-0y-CK1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="f6B-xr-1to" secondAttribute="bottom" constant="15" id="0zx-rn-hoU"/>
+                                    <constraint firstAttribute="trailing" secondItem="f6B-xr-1to" secondAttribute="trailing" constant="15" id="c7b-Pt-biZ"/>
+                                    <constraint firstItem="f6B-xr-1to" firstAttribute="leading" secondItem="d5X-FM-SOv" secondAttribute="leading" constant="15" id="j04-vk-HrC"/>
+                                    <constraint firstItem="f6B-xr-1to" firstAttribute="top" secondItem="d5X-FM-SOv" secondAttribute="top" constant="15" id="spc-nh-qHG"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sDR-1r-J97">
+                                <rect key="frame" x="15" y="95" width="258" height="28"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Service Provider name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgA-Az-GUH">
+                                        <rect key="frame" x="0.0" y="0.0" width="258" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="qgE-8p-b64"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d5X-FM-SOv" firstAttribute="top" secondItem="zlx-wE-mbb" secondAttribute="top" id="8Rm-DE-Vua"/>
+                            <constraint firstAttribute="trailing" secondItem="sDR-1r-J97" secondAttribute="trailing" constant="15" id="BpK-Uu-JG5"/>
+                            <constraint firstItem="d5X-FM-SOv" firstAttribute="leading" secondItem="zlx-wE-mbb" secondAttribute="leading" id="KqF-eE-5xd"/>
+                            <constraint firstItem="sDR-1r-J97" firstAttribute="leading" secondItem="zlx-wE-mbb" secondAttribute="leading" constant="15" id="VJl-2e-XSy"/>
+                            <constraint firstAttribute="bottom" secondItem="sDR-1r-J97" secondAttribute="bottom" constant="15" id="WB8-YT-Lpn"/>
+                            <constraint firstAttribute="trailing" secondItem="d5X-FM-SOv" secondAttribute="trailing" id="e1w-Yw-7UQ"/>
+                            <constraint firstItem="sDR-1r-J97" firstAttribute="top" secondItem="d5X-FM-SOv" secondAttribute="bottom" constant="15" id="nx2-KF-z4a"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zlx-wE-mbb" firstAttribute="trailing" secondItem="gbM-Tt-rzG" secondAttribute="trailingMargin" id="GnV-1w-7Bw"/>
+                    <constraint firstItem="zlx-wE-mbb" firstAttribute="leading" secondItem="gbM-Tt-rzG" secondAttribute="leadingMargin" id="K8z-RF-fTv"/>
+                    <constraint firstItem="zlx-wE-mbb" firstAttribute="top" secondItem="gbM-Tt-rzG" secondAttribute="topMargin" id="Koo-U9-6s4"/>
+                    <constraint firstItem="zlx-wE-mbb" firstAttribute="bottom" secondItem="gbM-Tt-rzG" secondAttribute="bottomMargin" id="ZMQ-yL-dBK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="NSt-x5-06e"/>
+            <connections>
+                <outlet property="imgUser" destination="EBy-ZJ-QEz" id="hTV-g5-rar"/>
+                <outlet property="lblDate" destination="Ypl-wg-Ml1" id="VKe-UQ-dmh"/>
+                <outlet property="lblMessage" destination="KgA-Az-GUH" id="FzD-pj-SFv"/>
+                <outlet property="lblUserName" destination="MbZ-gz-qxx" id="s79-Wz-PyB"/>
+                <outlet property="mainView" destination="zlx-wE-mbb" id="4bA-jq-Xh0"/>
+            </connections>
+            <point key="canvasLocation" x="92" y="109.74512743628186"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="small-Image-Place-Holder.png" width="1024" height="1024"/>
+    </resources>
+</document>

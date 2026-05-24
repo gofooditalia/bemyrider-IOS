@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "79K6W58FPR.com.app.bemyrider",
+        "paths": ["/rider", "/rider/*"]
+      }
+    ]
+  }
+}

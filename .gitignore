@@ -1,0 +1,86 @@
+# Xcode
+*.xcuserstate
+*.xcuserdatad/
+xcuserdata/
+*.moved-aside
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Secret configuration — DO NOT commit these
+Debug.xcconfig
+Release.xcconfig
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Build output
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# macOS
+.DS_Store
+*.swp
+
+# Backend (separate repo)
+Backend + SQL/
+
+# Build logs & temp files generated during development
+build_*.log
+build_*.txt
+build_log*.txt
+build_errors*.txt
+
+# Analysis & generated outputs
+graphify-out/
+AUDIT_PLAN.md
+BULK_INVOICE_IMPLEMENTATION.md
+BUG_ANDROID_DELIVERY_TYPE.md
+
+# Loose screenshots/media in project root (not in xcassets)
+Screenshot*.png
+*.mp4
+*.mov
+element-*.png
+rider.php
+
+# Remotion (separate project)
+remotion/
+
+# Dev scripts & docs generated during development
+*.rb
+*.py
+*.sh
+*.pdf
+*.log
+*.txt
+.claude/
+graphify-out/
+APRI_TUTTO.sh
+add_*.rb
+fix_*.rb
+clean_*.rb
+remove_*.rb
+build*.log
+build*.txt
+ERRORI_*.md
+FIX_*.md
+FATTO_*.txt
+GUIDA_*.md
+LEGGI_*.txt
+MODERNIZATION_PLAN.md
+OPTIMIZATION_PLAN.md
+RISOLUZIONE_*.md
+START_HERE.txt
+STATO_*.md
+ULTIMI_*.md
+WARNING_*.md
+CHAT_SYSTEM_DOCUMENTATION.md
+GoRider_Documentazione.md
+Piano\ di\ modernizzazione.pdf
+Nuova\ funzionalità\ bacheca/

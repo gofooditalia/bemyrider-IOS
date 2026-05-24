@@ -1,0 +1,7 @@
+// Debug configuration — TEMPLATE
+// Copy this file to Debug.xcconfig and fill in your actual keys
+// Debug.xcconfig is in .gitignore and must NOT be committed
+
+#include "Pods/Target Support Files/Pods-bemyrider/Pods-bemyrider.debug.xcconfig"
+
+STRIPE_PUBLISHABLE_KEY = pk_live_YOUR_KEY_HERE
