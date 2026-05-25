@@ -35,6 +35,8 @@ post_install do |installer|
       config.build_settings["GCC_WARN_INHIBIT_ALL_WARNINGS"] = "YES"
       config.build_settings["CLANG_WARN_DOCUMENTATION_COMMENTS"] = "NO"
       config.build_settings["SWIFT_SUPPRESS_WARNINGS"] = "YES"
+      config.build_settings["CODE_SIGNING_REQUIRED"] = "NO"
+      config.build_settings["CODE_SIGNING_ALLOWED"] = "NO"
     end
   end
   
