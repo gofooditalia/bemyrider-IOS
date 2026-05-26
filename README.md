@@ -3,6 +3,8 @@
 Applicazione nativa iOS per la gestione di servizi on-demand, dedicata a Rider e Provider.
 Il progetto è attualmente in fase di **modernizzazione attiva** per aggiornare lo stack tecnologico agli standard del 2026.
 
+Pipeline CI/CD attiva su Codemagic — ogni push su `main` produce automaticamente una build su TestFlight.
+
 ## 🛠 Tech Stack
 
 Il progetto utilizza un'architettura ibrida UIKit/SwiftUI basata su pattern MVVM.
