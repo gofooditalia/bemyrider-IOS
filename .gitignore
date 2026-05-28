@@ -12,6 +12,17 @@ DerivedData/
 # Secret configuration — DO NOT commit these
 Debug.xcconfig
 Release.xcconfig
+secret-non-tracciare/
+*.p8
+credentials.plist
+
+# Fastlane
+fastlane/report.xml
+fastlane/test_output/
+fastlane/Preview.html
+
+# Gemfile.lock non va in repo iOS (dipende da macOS/Linux)
+Gemfile.lock
 
 # CocoaPods
 Pods/

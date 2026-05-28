@@ -162,7 +162,7 @@
 		846C7A07230AE0CA00D0A573 /* CategoryTaskerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C7A06230AE0CA00D0A573 /* CategoryTaskerVC.swift */; };
 		84B22F4F2224297F00E5BBAE /* infoPageListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B22F4E2224297F00E5BBAE /* infoPageListVC.swift */; };
 		84B22F512224299400E5BBAE /* infoPageDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B22F502224299400E5BBAE /* infoPageDetailVC.swift */; };
-		A56C2DB7426F295DE1154FA3 /* Pods_GoRider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AA4752EAD962DC8D9E72AB /* Pods_GoRider.framework */; };
+		A56C2DB7426F295DE1154FA3 /* Pods_bemyrider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AA4752EAD962DC8D9E72AB /* Pods_bemyrider.framework */; };
 		EE16AA5D2078CDD800D3D7B2 /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE16AA5C2078CDD800D3D7B2 /* NavigationBarView.xib */; };
 		EE16AA5F2078CF0200D3D7B2 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE16AA5E2078CF0200D3D7B2 /* NavigationBarView.swift */; };
 		EE16AA632078E6C700D3D7B2 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE16AA622078E6C700D3D7B2 /* StatusBarView.swift */; };
@@ -419,8 +419,8 @@
 		79BBFE24F23EE5B7FF571028 /* BulkInvoicePeriodSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkInvoicePeriodSelector.swift; sourceTree = "<group>"; };
 		386DCE242E004738013AFEBB /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
 		063AE7259D59262A5E58DE12 /* FileDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownloadManager.swift; sourceTree = "<group>"; };
-		132598B2F2FA472A2798D2CC /* Pods-TaskGator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskGator.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaskGator/Pods-TaskGator.release.xcconfig"; sourceTree = "<group>"; };
-		571B48065ADFE1E5F3020497 /* Pods-GoRider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoRider.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoRider/Pods-GoRider.release.xcconfig"; sourceTree = "<group>"; };
+		132598B2F2FA472A2798D2CC /* Pods-bemyrider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bemyrider.release.xcconfig"; path = "Pods/Target Support Files/Pods-bemyrider/Pods-bemyrider.release.xcconfig"; sourceTree = "<group>"; };
+		571B48065ADFE1E5F3020497 /* Pods-bemyrider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bemyrider.release.xcconfig"; path = "Pods/Target Support Files/Pods-bemyrider/Pods-bemyrider.release.xcconfig"; sourceTree = "<group>"; };
 		676446760B2A990853745908 /* Pods-GoTasker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoTasker.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoTasker/Pods-GoTasker.release.xcconfig"; sourceTree = "<group>"; };
 		771C543823A211B000F868BB /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		771C543923A211B000F868BB /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -468,16 +468,16 @@
 		846C7A06230AE0CA00D0A573 /* CategoryTaskerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTaskerVC.swift; sourceTree = "<group>"; };
 		84B22F4E2224297F00E5BBAE /* infoPageListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoPageListVC.swift; sourceTree = "<group>"; };
 		84B22F502224299400E5BBAE /* infoPageDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoPageDetailVC.swift; sourceTree = "<group>"; };
-		9F6556ECBB83ACC16D515FA1 /* Pods-GoRider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoRider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoRider/Pods-GoRider.debug.xcconfig"; sourceTree = "<group>"; };
-		BCA4457952BC44BD4F868AB6 /* Pods-TaskGator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskGator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaskGator/Pods-TaskGator.debug.xcconfig"; sourceTree = "<group>"; };
+		9F6556ECBB83ACC16D515FA1 /* Pods-bemyrider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bemyrider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bemyrider/Pods-bemyrider.debug.xcconfig"; sourceTree = "<group>"; };
+		BCA4457952BC44BD4F868AB6 /* Pods-bemyrider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bemyrider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bemyrider/Pods-bemyrider.debug.xcconfig"; sourceTree = "<group>"; };
 		C8F9CC2592C4F15763517B42 /* Pods-GoTasker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoTasker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoTasker/Pods-GoTasker.debug.xcconfig"; sourceTree = "<group>"; };
-		D6AA4752EAD962DC8D9E72AB /* Pods_GoRider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoRider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6AA4752EAD962DC8D9E72AB /* Pods_bemyrider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bemyrider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67544ACCC54C3AE8C7E7DF4 /* Pods-Talabtech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talabtech.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Talabtech/Pods-Talabtech.debug.xcconfig"; sourceTree = "<group>"; };
 		EE16AA5C2078CDD800D3D7B2 /* NavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
 		EE16AA5E2078CF0200D3D7B2 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		EE16AA622078E6C700D3D7B2 /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
 		EE16AA642078E6EA00D3D7B2 /* StatusBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatusBarView.xib; sourceTree = "<group>"; };
-		EE17F798211ADC6200EA02E6 /* TaskGator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TaskGator-Bridging-Header.h"; sourceTree = "<group>"; };
+		EE17F798211ADC6200EA02E6 /* bemyrider-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bemyrider-Bridging-Header.h"; sourceTree = "<group>"; };
 		EE17F79C211AE29D00EA02E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE25902720A44CF1009DC456 /* ProviderSrvsReqRecent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderSrvsReqRecent.swift; sourceTree = "<group>"; };
 		EE25902920A498D0009DC456 /* DisputeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisputeDetailVC.swift; sourceTree = "<group>"; };
@@ -565,7 +565,7 @@
 		EE85A31820DB91F30052BBB2 /* AddNewServiceImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewServiceImageCell.swift; sourceTree = "<group>"; };
 		EE85A31920DB91F30052BBB2 /* AddNewServiceImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewServiceImageCell.xib; sourceTree = "<group>"; };
 		EE85D2F920FC6A0C00A51919 /* ReviewPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPopUpVC.swift; sourceTree = "<group>"; };
-		EE85D2FB20FCA60300A51919 /* TaskGator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaskGator.entitlements; sourceTree = "<group>"; };
+		EE85D2FB20FCA60300A51919 /* bemyrider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bemyrider.entitlements; sourceTree = "<group>"; };
 		EE891F652077808A00B7675C /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		EE96343820D4F4640092E872 /* ReviewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewList.swift; sourceTree = "<group>"; };
 		EE96343B20D4F6090092E872 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
@@ -582,7 +582,7 @@
 		EEC436E5208DFEE0003A3D6D /* NotificationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
 		EEC5B3C120F4B4BC00E77855 /* CustomerSideServiceDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomerSideServiceDetails.storyboard; sourceTree = "<group>"; };
 		EEC735E620D2728900282CE2 /* ImageCropper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropper.swift; sourceTree = "<group>"; };
-		EED591A92074D14700075B66 /* GoRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoRider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED591A92074D14700075B66 /* bemyrider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bemyrider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED591AC2074D14700075B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EED591B12074D14700075B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EED591B62074D14700075B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -632,7 +632,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A56C2DB7426F295DE1154FA3 /* Pods_GoRider.framework in Frameworks */,
+				A56C2DB7426F295DE1154FA3 /* Pods_bemyrider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,7 +646,7 @@
 				7757838F23D9C7C5008B845D /* SnapKit.framework */,
 				7757838B23D9C7C1008B845D /* NotificationBannerSwift.framework */,
 				7757838923D9C7AE008B845D /* NotificationBannerSwift.framework */,
-				D6AA4752EAD962DC8D9E72AB /* Pods_GoRider.framework */,
+				D6AA4752EAD962DC8D9E72AB /* Pods_bemyrider.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -658,12 +658,12 @@
 				CE020200CE020200CE020200 /* Release.xcconfig */,
 				E67544ACCC54C3AE8C7E7DF4 /* Pods-Talabtech.debug.xcconfig */,
 				F72D2D49C28230167D396D1D /* Pods-Talabtech.release.xcconfig */,
-				BCA4457952BC44BD4F868AB6 /* Pods-TaskGator.debug.xcconfig */,
-				132598B2F2FA472A2798D2CC /* Pods-TaskGator.release.xcconfig */,
+				BCA4457952BC44BD4F868AB6 /* Pods-bemyrider.debug.xcconfig */,
+				132598B2F2FA472A2798D2CC /* Pods-bemyrider.release.xcconfig */,
 				C8F9CC2592C4F15763517B42 /* Pods-GoTasker.debug.xcconfig */,
 				676446760B2A990853745908 /* Pods-GoTasker.release.xcconfig */,
-				9F6556ECBB83ACC16D515FA1 /* Pods-GoRider.debug.xcconfig */,
-				571B48065ADFE1E5F3020497 /* Pods-GoRider.release.xcconfig */,
+				9F6556ECBB83ACC16D515FA1 /* Pods-bemyrider.debug.xcconfig */,
+				571B48065ADFE1E5F3020497 /* Pods-bemyrider.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1118,7 +1118,7 @@
 		EED591A02074D14700075B66 = {
 			isa = PBXGroup;
 			children = (
-				EED591AB2074D14700075B66 /* TaskGator */,
+				EED591AB2074D14700075B66 /* bemyrider */,
 				EED591AA2074D14700075B66 /* Products */,
 				4D7DCD8D1E43F23598579C80 /* Pods */,
 				2AC0345CE26BE72E75A0CD19 /* Frameworks */,
@@ -1129,12 +1129,12 @@
 		EED591AA2074D14700075B66 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EED591A92074D14700075B66 /* GoRider.app */,
+				EED591A92074D14700075B66 /* bemyrider.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EED591AB2074D14700075B66 /* TaskGator */ = {
+		EED591AB2074D14700075B66 /* bemyrider */ = {
 			isa = PBXGroup;
 			children = (
 				71A3D3ADC15B724DB68C333E /* UpdateTempPasswordView.swift */,
@@ -1246,7 +1246,7 @@
 				A383D5EA94CC4EF8679A5074 /* SearchHostingVC.swift */,
 				AB30950A47B38286D05F950A /* PlaceAutocompleteVC.swift */,
 				773E35D9284F8EB300EE8988 /* Onboarding */,
-				EE85D2FB20FCA60300A51919 /* TaskGator.entitlements */,
+				EE85D2FB20FCA60300A51919 /* bemyrider.entitlements */,
 				EE7CED372108B4A6000F7EB1 /* SplashScreen */,
 				EE77D803207C938600D32A41 /* ViewControllers */,
 				EE4B192D207655AB0004220C /* Font */,
@@ -1284,14 +1284,14 @@
 				EE76F72B207F8A4000CEB384 /* small-Image-Place-Holder.png */,
 				EE76F72D207F8A5900CEB384 /* Image-Place-Holder.png */,
 				EE7CED352108B46D000F7EB1 /* ios-splash-screen.png */,
-				EE17F798211ADC6200EA02E6 /* TaskGator-Bridging-Header.h */,
+				EE17F798211ADC6200EA02E6 /* bemyrider-Bridging-Header.h */,
 				77E7036023F52446005627FB /* ToDo.rtf */,
 							4046D2DB6DF1C354AEDEEA53 /* BulkInvoiceDownloadViewModel.swift */,
 				79BBFE24F23EE5B7FF571028 /* BulkInvoicePeriodSelector.swift */,
 				386DCE242E004738013AFEBB /* FloatingActionButton.swift */,
 				063AE7259D59262A5E58DE12 /* FileDownloadManager.swift */,
 );
-			path = TaskGator;
+			path = bemyrider;
 			sourceTree = "<group>";
 		};
 		EED591BE2074D22300075B66 /* Patner */ = {
@@ -1443,9 +1443,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EED591A82074D14700075B66 /* GoRider */ = {
+		EED591A82074D14700075B66 /* bemyrider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EED591BB2074D14700075B66 /* Build configuration list for PBXNativeTarget "GoRider" */;
+			buildConfigurationList = EED591BB2074D14700075B66 /* Build configuration list for PBXNativeTarget "bemyrider" */;
 			buildPhases = (
 				A7EFFB762FF7EB00A4B5223F /* [CP] Check Pods Manifest.lock */,
 				EED591A52074D14700075B66 /* Sources */,
@@ -1458,9 +1458,9 @@
 			);
 			dependencies = (
 			);
-			name = GoRider;
+			name = bemyrider;
 			productName = Talabtech;
-			productReference = EED591A92074D14700075B66 /* GoRider.app */;
+			productReference = EED591A92074D14700075B66 /* bemyrider.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1491,7 +1491,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EED591A42074D14700075B66 /* Build configuration list for PBXProject "GoRider" */;
+			buildConfigurationList = EED591A42074D14700075B66 /* Build configuration list for PBXProject "bemyrider" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1507,7 +1507,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EED591A82074D14700075B66 /* GoRider */,
+				EED591A82074D14700075B66 /* bemyrider */,
 			);
 		};
 /* End PBXProject section */
@@ -1586,7 +1586,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GoRider/Pods-GoRider-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-bemyrider/Pods-bemyrider-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
@@ -1641,7 +1641,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoRider/Pods-GoRider-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bemyrider/Pods-bemyrider-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A7EFFB762FF7EB00A4B5223F /* [CP] Check Pods Manifest.lock */ = {
@@ -1655,7 +1655,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GoRider-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-bemyrider-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1668,7 +1668,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GoRider/Pods-GoRider-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-bemyrider/Pods-bemyrider-resources.sh",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -1677,7 +1677,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoRider/Pods-GoRider-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bemyrider/Pods-bemyrider-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2114,27 +2114,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = TaskGator/TaskGator.entitlements;
+				CODE_SIGN_ENTITLEMENTS = bemyrider/bemyrider.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 79K6W58FPR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/TaskGator/LinkedInFramework",
+					"$(PROJECT_DIR)/bemyrider/LinkedInFramework",
 				);
-				INFOPLIST_FILE = TaskGator/Info.plist;
+				INFOPLIST_FILE = bemyrider/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.bemyrider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "TaskGator/TaskGator-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "bemyrider/bemyrider-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -2144,33 +2145,34 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = TaskGator/TaskGator.entitlements;
+				CODE_SIGN_ENTITLEMENTS = bemyrider/bemyrider.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 79K6W58FPR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/TaskGator/LinkedInFramework",
+					"$(PROJECT_DIR)/bemyrider/LinkedInFramework",
 				);
-				INFOPLIST_FILE = TaskGator/Info.plist;
+				INFOPLIST_FILE = bemyrider/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.bemyrider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "TaskGator/TaskGator-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "bemyrider/bemyrider-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EED591A42074D14700075B66 /* Build configuration list for PBXProject "GoRider" */ = {
+		EED591A42074D14700075B66 /* Build configuration list for PBXProject "bemyrider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EED591B92074D14700075B66 /* Debug */,
@@ -2179,7 +2181,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EED591BB2074D14700075B66 /* Build configuration list for PBXNativeTarget "GoRider" */ = {
+		EED591BB2074D14700075B66 /* Build configuration list for PBXNativeTarget "bemyrider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EED591BC2074D14700075B66 /* Debug */,

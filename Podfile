@@ -1,11 +1,11 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '14.0'
 
-target 'GoRider' do
+target 'bemyrider' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for GoRider
+  # Pods for bemyrider
     pod 'AlamofireImage', '~> 4.0'
     pod 'IQKeyboardManagerSwift', '~> 7.0'
     pod 'SkyFloatingLabelTextField', '~> 4.0'
@@ -35,6 +35,8 @@ post_install do |installer|
       config.build_settings["GCC_WARN_INHIBIT_ALL_WARNINGS"] = "YES"
       config.build_settings["CLANG_WARN_DOCUMENTATION_COMMENTS"] = "NO"
       config.build_settings["SWIFT_SUPPRESS_WARNINGS"] = "YES"
+      config.build_settings["CODE_SIGNING_REQUIRED"] = "NO"
+      config.build_settings["CODE_SIGNING_ALLOWED"] = "NO"
     end
   end
   
