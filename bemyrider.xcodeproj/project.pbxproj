@@ -623,6 +623,8 @@
 		F5E46F6527E31944001BE1D6 /* InteractivePopNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractivePopNavigationController.swift; sourceTree = "<group>"; };
 		F5E46F6A27E334A1001BE1D6 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		F72D2D49C28230167D396D1D /* Pods-Talabtech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talabtech.release.xcconfig"; path = "Pods/Target Support Files/Pods-Talabtech/Pods-Talabtech.release.xcconfig"; sourceTree = "<group>"; };
+		CE020100CE020100CE020100 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		CE020200CE020200CE020200 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -652,6 +654,8 @@
 		4D7DCD8D1E43F23598579C80 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				CE020100CE020100CE020100 /* Debug.xcconfig */,
+				CE020200CE020200CE020200 /* Release.xcconfig */,
 				E67544ACCC54C3AE8C7E7DF4 /* Pods-Talabtech.debug.xcconfig */,
 				F72D2D49C28230167D396D1D /* Pods-Talabtech.release.xcconfig */,
 				BCA4457952BC44BD4F868AB6 /* Pods-TaskGator.debug.xcconfig */,
@@ -2106,7 +2110,7 @@
 		};
 		EED591BC2074D14700075B66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F6556ECBB83ACC16D515FA1 /* Pods-GoRider.debug.xcconfig */;
+			baseConfigurationReference = CE020100CE020100CE020100 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -2136,7 +2140,7 @@
 		};
 		EED591BD2074D14700075B66 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 571B48065ADFE1E5F3020497 /* Pods-GoRider.release.xcconfig */;
+			baseConfigurationReference = CE020200CE020200CE020200 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
