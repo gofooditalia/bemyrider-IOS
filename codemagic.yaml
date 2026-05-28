@@ -31,6 +31,10 @@ workflows:
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           cp /tmp/profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
           rm /tmp/profile.mobileprovision
+      - name: Generate xcconfig files
+        script: |
+          echo '#include "Pods/Target Support Files/Pods-bemyrider/Pods-bemyrider.debug.xcconfig"' > Debug.xcconfig
+          echo '#include "Pods/Target Support Files/Pods-bemyrider/Pods-bemyrider.release.xcconfig"' > Release.xcconfig
       - name: Install CocoaPods dependencies
         script: bundle exec pod install
       - name: Build and upload via Fastlane
