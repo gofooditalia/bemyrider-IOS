@@ -12,7 +12,38 @@ import Foundation
 
 struct APIError: LocalizedError {
     let message: String
+    /// Codice `URLError` sottostante quando il fallimento è avvenuto a livello di rete
+    /// (es. `.networkConnectionLost` = -1005 "La connessione è stata persa").
+    var urlErrorCode: URLError.Code? = nil
     var errorDescription: String? { message }
+
+    /// `true` se la richiesta è caduta per un problema di rete transitorio
+    /// (connessione persa, timeout, host irraggiungibile) e ha senso ritentarla.
+    var isTransientNetworkFailure: Bool {
+        guard let code = urlErrorCode else { return false }
+        return URLError.transientCodes.contains(code)
+    }
+}
+
+extension URLError {
+    /// Errori di rete che tipicamente si risolvono ritentando la stessa richiesta.
+    /// Caso concreto: la POST `bulk-invoices` dura 30-60 s perché il server genera i PDF;
+    /// su rete mobile (handover di cella, cambio rete, app in background) la connessione
+    /// TCP/QUIC può cadere e URLSession, a differenza di OkHttp su Android, non ritenta
+    /// mai una POST da solo.
+    static let transientCodes: Set<URLError.Code> = [
+        .networkConnectionLost,
+        .timedOut,
+        .cannotConnectToHost,
+        .cannotFindHost,
+        .dnsLookupFailed,
+        .notConnectedToInternet
+    ]
+
+    static func isTransient(_ error: Error) -> Bool {
+        guard let urlError = error as? URLError else { return false }
+        return transientCodes.contains(urlError.code)
+    }
 }
 
 // MARK: - Codable models
@@ -79,7 +110,9 @@ final class APIClient {
     /// Injects `lId` and `login_userid` automatically (mirrors Modal.addLanguageId).
     /// Throws `APIError` on network failure or when the server returns `status: false`.
     /// Returns the full response envelope as `[String: Any]` on success.
-    func post(_ path: String, params: [String: Any] = [:], useCookies: Bool = true, useLongTimeout: Bool = false) async throws -> [String: Any] {
+    /// - Parameter maxRetries: number of automatic retries on transient network failures
+    ///   (see `URLError.transientCodes`). Use only for idempotent endpoints. Default 0.
+    func post(_ path: String, params: [String: Any] = [:], useCookies: Bool = true, useLongTimeout: Bool = false, maxRetries: Int = 0) async throws -> [String: Any] {
         var allParams = params
         allParams["lId"] = UserData.shared.languageID
         if let user = UserData.shared.getUser(), !user.user_id.isEmpty {
@@ -117,15 +150,7 @@ final class APIClient {
             activeSession = sessionNoCookies
         }
 
-        let data: Data = try await withCheckedThrowingContinuation { continuation in
-            activeSession.dataTask(with: request) { data, _, error in
-                if let error = error {
-                    continuation.resume(throwing: APIError(message: error.localizedDescription))
-                } else {
-                    continuation.resume(returning: data ?? Data())
-                }
-            }.resume()
-        }
+        let data = try await sendWithRetry(request, on: activeSession, maxRetries: maxRetries)
 
         guard let json = try JSONSerialization.jsonObject(with: data) as? [String: Any] else {
             throw APIError(message: "Invalid server response")
@@ -136,6 +161,39 @@ final class APIClient {
             throw APIError(message: json["message"] as? String ?? "Request failed")
         }
         return json
+    }
+
+    /// Sends the request, retrying up to `maxRetries` times on transient network failures
+    /// with a linear backoff (2 s, 4 s, ...). Any other error is rethrown immediately.
+    private func sendWithRetry(_ request: URLRequest, on session: URLSession, maxRetries: Int) async throws -> Data {
+        var attempt = 0
+        while true {
+            do {
+                return try await send(request, on: session)
+            } catch let error as APIError where error.isTransientNetworkFailure && attempt < maxRetries {
+                attempt += 1
+                #if DEBUG
+                print("APIClient: \(request.url?.path ?? "?") failed with '\(error.message)' – retry \(attempt)/\(maxRetries)")
+                #endif
+                try await Task.sleep(nanoseconds: UInt64(attempt) * 2_000_000_000)
+            }
+        }
+    }
+
+    /// Single network round-trip. Wraps transport errors in `APIError`, preserving the `URLError` code.
+    private func send(_ request: URLRequest, on session: URLSession) async throws -> Data {
+        try await withCheckedThrowingContinuation { continuation in
+            session.dataTask(with: request) { data, _, error in
+                if let error = error {
+                    continuation.resume(throwing: APIError(
+                        message: error.localizedDescription,
+                        urlErrorCode: (error as? URLError)?.code
+                    ))
+                } else {
+                    continuation.resume(returning: data ?? Data())
+                }
+            }.resume()
+        }
     }
 }
 
@@ -322,8 +380,10 @@ extension APIClient {
             params["date_to"] = to
         }
 
-        // Usa timeout esteso per la generazione di molti PDF
-        let response = try await post(EndPoint.bulkInvoices, params: params, useLongTimeout: true)
+        // Usa timeout esteso per la generazione di molti PDF (30-60 s lato server).
+        // L'endpoint è idempotente (lo ZIP per utente+periodo viene rigenerato ad ogni chiamata),
+        // quindi in caso di connessione persa a metà richiesta si può ritentare in sicurezza.
+        let response = try await post(EndPoint.bulkInvoices, params: params, useLongTimeout: true, maxRetries: 2)
         return response["data"] as? [String: Any] ?? [:]
     }
 }

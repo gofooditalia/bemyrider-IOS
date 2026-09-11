@@ -19,18 +19,36 @@ class FileDownloadManager: NSObject {
     /// Scarica un file da URL e lo salva nella cartella Documents
     /// - Parameters:
     ///   - urlString: URL del file da scaricare
+    ///   - maxRetries: Numero di tentativi aggiuntivi in caso di errore di rete transitorio
+    ///     (connessione persa, timeout). Il download è una GET idempotente, quindi ritentare è sicuro.
     ///   - completion: Callback con il percorso locale del file scaricato o errore
-    func downloadFile(from urlString: String, completion: @escaping (Swift.Result<URL, Error>) -> Void) {
+    func downloadFile(from urlString: String, maxRetries: Int = 2, completion: @escaping (Swift.Result<URL, Error>) -> Void) {
         guard let url = URL(string: urlString) else {
             completion(.failure(NSError(domain: "FileDownloadManager", code: -1, userInfo: [NSLocalizedDescriptionKey: "URL non valido"])))
             return
         }
 
+        performDownload(url: url, attempt: 0, maxRetries: maxRetries, completion: completion)
+    }
+
+    private func performDownload(url: URL, attempt: Int, maxRetries: Int, completion: @escaping (Swift.Result<URL, Error>) -> Void) {
         let configuration = URLSessionConfiguration.default
+        // Se la rete manca per qualche istante (es. cambio cella), attende invece di fallire subito.
+        configuration.waitsForConnectivity = true
         let session = URLSession(configuration: configuration, delegate: self, delegateQueue: nil)
 
-        let downloadTask = session.downloadTask(with: url) { tempLocalUrl, response, error in
+        let downloadTask = session.downloadTask(with: url) { [weak self] tempLocalUrl, response, error in
             if let error = error {
+                if let self = self, attempt < maxRetries, URLError.isTransient(error) {
+                    #if DEBUG
+                    print("FileDownloadManager: download failed with '\(error.localizedDescription)' – retry \(attempt + 1)/\(maxRetries)")
+                    #endif
+                    let delay = Double(attempt + 1) * 2.0
+                    DispatchQueue.global().asyncAfter(deadline: .now() + delay) {
+                        self.performDownload(url: url, attempt: attempt + 1, maxRetries: maxRetries, completion: completion)
+                    }
+                    return
+                }
                 DispatchQueue.main.async {
                     completion(.failure(error))
                 }
