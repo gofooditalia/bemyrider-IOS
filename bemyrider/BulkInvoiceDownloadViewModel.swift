@@ -55,13 +55,21 @@ class BulkInvoiceDownloadViewModel: ObservableObject {
             try await downloadZipFile(from: fileName, invoiceCount: count)
 
         } catch let error as APIError {
-            errorMessage = error.message
+            errorMessage = error.isTransientNetworkFailure ? Self.connectionLostMessage : error.message
+        } catch let error where URLError.isTransient(error) {
+            errorMessage = Self.connectionLostMessage
         } catch {
             errorMessage = error.localizedDescription
         }
 
         isLoading = false
     }
+
+    /// Messaggio mostrato quando, anche dopo i tentativi automatici, la connessione cade
+    /// durante la generazione delle ricevute (operazione lunga lato server).
+    static let connectionLostMessage =
+        "La connessione è caduta mentre il server preparava le ricevute (l'operazione può richiedere fino a un minuto). " +
+        "Controlla la rete e riprova; se il problema continua, scegli un periodo più breve."
 
     /// Scarica il file ZIP e lo salva localmente
     /// - Parameters:
